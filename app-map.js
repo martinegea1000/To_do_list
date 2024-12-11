@@ -48,7 +48,7 @@ items.set('3', 'Eat Food');
 // This home route handler displays the current to -do list items by date.
 app.get("/", function (req, res) {
   // Call the getDate function from our date module which returns the current date formatted.
-  const day = date.getDate();
+  const day = date.getDay();
 
   // Convert the Map to an Array of objects for EJS to iterate over
   // Transforming the map into an array of objects to leverage EJS's iteration capabilities.
